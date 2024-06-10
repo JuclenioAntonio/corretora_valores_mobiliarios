@@ -1,0 +1,504 @@
+ERROR - 2024-06-04 08:44:20 --> Error connecting to the database: mysqli_sql_exception: Nenhuma ligação pôde ser feita porque o computador de destino
+as recusou ativamente in C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'corretora', 3306, '', 0)
+#1 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`Val...', Array, false)
+#4 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\app\Controllers\Home.php(15): CodeIgniter\BaseModel->first()
+#7 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Home->index()
+#8 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Nenhuma ligação pôde ser feita porque o computador de destino
+as recusou ativamente in C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`Val...', Array, false)
+#3 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\app\Controllers\Home.php(15): CodeIgniter\BaseModel->first()
+#6 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Home->index()
+#7 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\...')
+#11 {main}
+CRITICAL - 2024-06-04 08:44:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Nenhuma ligação pôde ser feita porque o computador de destino
+as recusou ativamente
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`ValorTotal`) AS `ValorTotal`
+FROM `Operacao`
+ LIMIT 1', [], false)
+ 3 SYSTEMPATH\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Home.php(15): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+ERROR - 2024-06-04 08:45:06 --> Error connecting to the database: mysqli_sql_exception: Nenhuma ligação pôde ser feita porque o computador de destino
+as recusou ativamente in C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'corretora', 3306, '', 0)
+#1 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`Val...', Array, false)
+#4 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\app\Controllers\Home.php(15): CodeIgniter\BaseModel->first()
+#7 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Home->index()
+#8 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Nenhuma ligação pôde ser feita porque o computador de destino
+as recusou ativamente in C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`Val...', Array, false)
+#3 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\app\Controllers\Home.php(15): CodeIgniter\BaseModel->first()
+#6 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Home->index()
+#7 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\...')
+#11 {main}
+CRITICAL - 2024-06-04 08:45:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Nenhuma ligação pôde ser feita porque o computador de destino
+as recusou ativamente
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`ValorTotal`) AS `ValorTotal`
+FROM `Operacao`
+ LIMIT 1', [], false)
+ 3 SYSTEMPATH\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Home.php(15): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+ERROR - 2024-06-04 08:45:14 --> Error connecting to the database: mysqli_sql_exception: Nenhuma ligação pôde ser feita porque o computador de destino
+as recusou ativamente in C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'corretora', 3306, '', 0)
+#1 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`Val...', Array, false)
+#4 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\app\Controllers\Home.php(15): CodeIgniter\BaseModel->first()
+#7 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Home->index()
+#8 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Nenhuma ligação pôde ser feita porque o computador de destino
+as recusou ativamente in C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`Val...', Array, false)
+#3 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\app\Controllers\Home.php(15): CodeIgniter\BaseModel->first()
+#6 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Home->index()
+#7 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\jucle\Documents\[02] university\[02] programacao_web_II\[02] avaliações\[03] projecto\project-root\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\...')
+#11 {main}
+CRITICAL - 2024-06-04 08:45:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Nenhuma ligação pôde ser feita porque o computador de destino
+as recusou ativamente
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`ValorTotal`) AS `ValorTotal`
+FROM `Operacao`
+ LIMIT 1', [], false)
+ 3 SYSTEMPATH\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Home.php(15): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:04:56 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:04:56 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:04:56 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:04:56 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:04:56 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:04:56 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:04:56 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:04:56 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:04:56 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:04:56 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:04:56 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:04:56 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:05:11 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:05:11 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:05:11 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:05:11 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:05:11 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:05:11 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:05:11 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:05:11 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:05:11 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:05:11 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:05:11 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:05:11 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:06:05 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:06:05 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:06:05 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:06:05 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:06:05 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:06:05 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:06:05 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:06:05 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:06:05 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:06:05 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:06:05 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:06:05 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:07:32 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:07:32 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:07:32 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:07:32 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:07:32 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:07:32 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:07:32 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:07:32 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:07:32 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:07:32 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:07:32 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:07:32 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:07:48 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:07:48 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:07:48 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:07:48 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:07:48 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:07:48 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:07:48 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:07:48 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:07:48 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:07:48 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:07:48 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
+WARNING - 2024-06-04 09:07:48 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jucle\\Documents\\[02] university\\[02] programacao_web_II\\[02] avaliações\\[03] projecto\\project-root\\public\\index.php')
